@@ -1,0 +1,17 @@
+{
+  "name": "CN-SUMMER",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "frontend",
+  "workspaceFolder": "/app",
+  "forwardPorts": [5173, 5000],
+  "postCreateCommand": "npm install --prefix frontend && npm install --prefix backend",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
